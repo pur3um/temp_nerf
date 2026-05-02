@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#! NEW
+data/**
+!data/
+!data/download.sh
+
+*.png
+*.PNG
+*.jpg
+
+# run_100k.sh
