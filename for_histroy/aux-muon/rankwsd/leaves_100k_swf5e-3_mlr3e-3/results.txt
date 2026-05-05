@@ -1,0 +1,38 @@
+====================================================================================================
+run_start_time: 2026-05-05 07:06:06
+script: run_nerf_ranksched.py
+expname: leaves_100k_swf5e-3_mlr3e-3
+dataset_type: llff
+datadir: ./data/nerf_llff_data/leaves
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.003
+  muon_weight_decay: 0.0
+  muon_momentum: 0.9
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.0005
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 250
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: rank_wsd
+  warmup_steps: 500
+  min_lr_ratio: 0.1
+  decay_start_step: 80000
+train_psnr_log:
+iter=2000 global_step=1999 loss=0.0335114598 psnr=17.766693 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=4000 global_step=3999 loss=0.0276271366 psnr=18.660759 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=6000 global_step=5999 loss=0.0248548687 psnr=19.192137 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=8000 global_step=7999 loss=0.0241532326 psnr=19.303942 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=10000 global_step=9999 loss=0.0211563706 psnr=20.036123 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=12000 global_step=11999 loss=0.0182380881 psnr=20.379110 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=14000 global_step=13999 loss=0.0167491026 psnr=20.827494 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=16000 global_step=15999 loss=0.0181882046 psnr=20.652676 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=18000 global_step=17999 loss=0.0193557404 psnr=20.329283 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=20000 global_step=19999 loss=0.0166421793 psnr=20.992451 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=22000 global_step=21999 loss=0.0135931000 psnr=21.844410 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=24000 global_step=23999 loss=0.0150362318 psnr=21.175432 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=26000 global_step=25999 loss=0.0136555834 psnr=21.837929 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
+iter=28000 global_step=27999 loss=0.0180030353 psnr=20.796165 muon_lr=3.00000000e-03 adam_lr=5.00000000e-04
