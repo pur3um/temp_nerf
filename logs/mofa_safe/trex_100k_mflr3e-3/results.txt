@@ -1,0 +1,41 @@
+====================================================================================================
+run_start_time: 2026-05-06 12:25:13
+script: run_nerf_mofasgd_safe.py
+device: cuda
+seed: 0
+expname: trex_100k_mflr3e-3
+dataset_type: llff
+datadir: ./data/nerf_llff_data/trex
+resume_start_iter: 0
+optimizer_mode: mofa_split
+optimizer_hparams:
+  adam_lr_init: 0.0005
+  lrate_decay_ksteps: 250
+  mofa_lr_init: 0.003
+  mofa_rank: 64
+  mofa_beta: 0.95
+  mofa_weight_decay: 0.0
+  mofa_eta1: 1.0
+  mofa_eta2: 0.0
+  mofa_eps_reciprocal: 0.0001
+  mofa_uv_eps: 0.0
+  mofa_max_value: 5.0
+  mofa_use_reciprocal_s: False
+  mofa_use_current_projection: False
+  mofa_nesterov_like: False
+optimizer_diagnostics_at_start:
+{
+  "main": {
+    "num_tensors": 20,
+    "initialized_tensors": 0,
+    "rank_clipped_tensors": 0,
+    "total_fallbacks": 0,
+    "total_qr_failures": 0,
+    "min_rank": null,
+    "max_rank": null
+  },
+  "aux": {
+    "num_param_groups": 1
+  }
+}
+train_log:

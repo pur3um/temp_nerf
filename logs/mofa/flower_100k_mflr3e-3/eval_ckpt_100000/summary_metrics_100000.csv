@@ -1,0 +1,2 @@
+method,scene,variant,num_images,mean_mse,mean_psnr,mean_ssim,mean_lpips,checkpoint,checkpoint_file_step,checkpoint_global_step,config,render_dir,metric_source
+,,,5,0.0019130248809233307,27.301177709300994,0.8434658288955689,,/data2/greenx9/temp_nerf/logs/mofa/flower_100k_mflr3e-3/100000.tar,100000,99999,/data2/greenx9/temp_nerf/logs/mofa/flower_100k_mflr3e-3/config.txt,,float32_render_output_before_png_quantization

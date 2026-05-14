@@ -1,0 +1,2 @@
+method,scene,variant,num_images,mean_mse,mean_psnr,mean_ssim,mean_lpips,checkpoint,checkpoint_file_step,checkpoint_global_step,config,render_dir,metric_source
+,,,7,0.0021753252783258048,26.709351439601566,0.8883852703230721,,/data2/greenx9/temp_nerf/logs/mofa/trex_100k_mflr3e-3/100000.tar,100000,99999,/data2/greenx9/temp_nerf/logs/mofa/trex_100k_mflr3e-3/config.txt,,float32_render_output_before_png_quantization

@@ -1,0 +1,2 @@
+method,scene,variant,num_images,mean_mse,mean_psnr,mean_ssim,mean_lpips,checkpoint,checkpoint_file_step,checkpoint_global_step,config,render_dir,metric_source
+,,,6,0.0007408009745025387,31.42314101220364,0.8945838908354441,,/data2/greenx9/temp_nerf/logs/mofa/fortress_100k_mflr3e-3/100000.tar,100000,99999,/data2/greenx9/temp_nerf/logs/mofa/fortress_100k_mflr3e-3/config.txt,,float32_render_output_before_png_quantization

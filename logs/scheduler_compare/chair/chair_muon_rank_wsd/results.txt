@@ -1,0 +1,125 @@
+====================================================================================================
+run_start_time: 2026-05-06 12:51:23
+script: run_nerf_ranksched.py
+expname: chair_muon_rank_wsd
+dataset_type: blender
+datadir: ./data/nerf_synthetic/chair
+resume_start_step: 0
+optimizer_setup:
+  optimizer_main: Muon
+  muon_lr_init: 0.0005
+  muon_weight_decay: 0.0
+  muon_momentum: 0.9
+  optimizer_aux: Adam
+  aux_adam_lr_init: 0.0005
+  aux_adam_betas: (0.9, 0.999)
+  lrate_decay_ksteps: 250
+  muon_tensor_count: 48
+  muon_total_params: 1191688
+scheduler_setup:
+  scheduler_name: rank_wsd
+  warmup_steps: 2000
+  min_lr_ratio: 0.1
+  decay_start_step: None
+train_psnr_log:
+iter=2000 global_step=1999 loss=0.0599310286 psnr=15.191392 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=4000 global_step=3999 loss=0.0168887395 psnr=20.898220 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=6000 global_step=5999 loss=0.0055770958 psnr=25.963779 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=8000 global_step=7999 loss=0.0067576114 psnr=25.778059 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=10000 global_step=9999 loss=0.0056460081 psnr=26.246923 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=12000 global_step=11999 loss=0.0028124917 psnr=29.945942 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=14000 global_step=13999 loss=0.0040477253 psnr=27.616344 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=16000 global_step=15999 loss=0.0024473432 psnr=30.560955 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=18000 global_step=17999 loss=0.0026012198 psnr=30.407644 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=20000 global_step=19999 loss=0.0039854255 psnr=28.432882 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=22000 global_step=21999 loss=0.0037951106 psnr=28.991379 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=24000 global_step=23999 loss=0.0014774571 psnr=32.384617 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=26000 global_step=25999 loss=0.0037446260 psnr=28.808006 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=28000 global_step=27999 loss=0.0020550773 psnr=31.011177 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=30000 global_step=29999 loss=0.0031162293 psnr=29.833452 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=32000 global_step=31999 loss=0.0028559850 psnr=29.844286 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=34000 global_step=33999 loss=0.0029885117 psnr=29.383574 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=36000 global_step=35999 loss=0.0014696186 psnr=33.188992 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=38000 global_step=37999 loss=0.0010830455 psnr=34.742264 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=40000 global_step=39999 loss=0.0031469255 psnr=29.468527 muon_lr=5.00000000e-04 adam_lr=5.00000000e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=42000 global_step=41999 loss=0.0010949764 psnr=34.543049 muon_lr=4.88755625e-04 adam_lr=4.88755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=44000 global_step=43999 loss=0.0038502822 psnr=29.120420 muon_lr=4.77505625e-04 adam_lr=4.77505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=46000 global_step=45999 loss=0.0019813580 psnr=31.145834 muon_lr=4.66255625e-04 adam_lr=4.66255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=48000 global_step=47999 loss=0.0017425502 psnr=32.563610 muon_lr=4.55005625e-04 adam_lr=4.55005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=50000 global_step=49999 loss=0.0031280397 psnr=30.482958 muon_lr=4.43755625e-04 adam_lr=4.43755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=52000 global_step=51999 loss=0.0026317905 psnr=30.938505 muon_lr=4.32505625e-04 adam_lr=4.32505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=54000 global_step=53999 loss=0.0015595222 psnr=33.383675 muon_lr=4.21255625e-04 adam_lr=4.21255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=56000 global_step=55999 loss=0.0023136628 psnr=30.494930 muon_lr=4.10005625e-04 adam_lr=4.10005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=58000 global_step=57999 loss=0.0015112374 psnr=32.456219 muon_lr=3.98755625e-04 adam_lr=3.98755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=60000 global_step=59999 loss=0.0009127149 psnr=35.283836 muon_lr=3.87505625e-04 adam_lr=3.87505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=62000 global_step=61999 loss=0.0019606850 psnr=31.953138 muon_lr=3.76255625e-04 adam_lr=3.76255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=64000 global_step=63999 loss=0.0028064083 psnr=30.718710 muon_lr=3.65005625e-04 adam_lr=3.65005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=66000 global_step=65999 loss=0.0019138283 psnr=32.421173 muon_lr=3.53755625e-04 adam_lr=3.53755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=68000 global_step=67999 loss=0.0011413493 psnr=36.180145 muon_lr=3.42505625e-04 adam_lr=3.42505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=70000 global_step=69999 loss=0.0031511006 psnr=30.877943 muon_lr=3.31255625e-04 adam_lr=3.31255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=72000 global_step=71999 loss=0.0009556762 psnr=36.070015 muon_lr=3.20005625e-04 adam_lr=3.20005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=74000 global_step=73999 loss=0.0016099715 psnr=33.124344 muon_lr=3.08755625e-04 adam_lr=3.08755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=76000 global_step=75999 loss=0.0016142080 psnr=32.328224 muon_lr=2.97505625e-04 adam_lr=2.97505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=78000 global_step=77999 loss=0.0020692586 psnr=32.220722 muon_lr=2.86255625e-04 adam_lr=2.86255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=80000 global_step=79999 loss=0.0021574297 psnr=30.991499 muon_lr=2.75005625e-04 adam_lr=2.75005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=82000 global_step=81999 loss=0.0026845583 psnr=31.000862 muon_lr=2.63755625e-04 adam_lr=2.63755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=84000 global_step=83999 loss=0.0024962879 psnr=30.939459 muon_lr=2.52505625e-04 adam_lr=2.52505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=86000 global_step=85999 loss=0.0027670241 psnr=30.756992 muon_lr=2.41255625e-04 adam_lr=2.41255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=88000 global_step=87999 loss=0.0023465455 psnr=31.136854 muon_lr=2.30005625e-04 adam_lr=2.30005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=90000 global_step=89999 loss=0.0007758322 psnr=36.041595 muon_lr=2.18755625e-04 adam_lr=2.18755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=92000 global_step=91999 loss=0.0009923994 psnr=35.244892 muon_lr=2.07505625e-04 adam_lr=2.07505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=94000 global_step=93999 loss=0.0020473814 psnr=32.452026 muon_lr=1.96255625e-04 adam_lr=1.96255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=96000 global_step=95999 loss=0.0008853783 psnr=36.418648 muon_lr=1.85005625e-04 adam_lr=1.85005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=98000 global_step=97999 loss=0.0018970883 psnr=32.725227 muon_lr=1.73755625e-04 adam_lr=1.73755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=100000 global_step=99999 loss=0.0020598669 psnr=31.171387 muon_lr=1.62505625e-04 adam_lr=1.62505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=102000 global_step=101999 loss=0.0024036816 psnr=31.032900 muon_lr=1.51255625e-04 adam_lr=1.51255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=104000 global_step=103999 loss=0.0011239395 psnr=35.449989 muon_lr=1.40005625e-04 adam_lr=1.40005625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=106000 global_step=105999 loss=0.0019657495 psnr=33.453697 muon_lr=1.28755625e-04 adam_lr=1.28755625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=108000 global_step=107999 loss=0.0025039201 psnr=32.020134 muon_lr=1.17505625e-04 adam_lr=1.17505625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=110000 global_step=109999 loss=0.0016730223 psnr=32.224804 muon_lr=1.06255625e-04 adam_lr=1.06255625e-04 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=112000 global_step=111999 loss=0.0019650778 psnr=32.368629 muon_lr=9.50056250e-05 adam_lr=9.50056250e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=114000 global_step=113999 loss=0.0024560580 psnr=31.320274 muon_lr=8.37556250e-05 adam_lr=8.37556250e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=116000 global_step=115999 loss=0.0017608105 psnr=33.033199 muon_lr=7.25056250e-05 adam_lr=7.25056250e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=118000 global_step=117999 loss=0.0015964735 psnr=33.100403 muon_lr=6.12556250e-05 adam_lr=6.12556250e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=120000 global_step=119999 loss=0.0014235126 psnr=33.785637 muon_lr=5.00056250e-05 adam_lr=5.00056250e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=122000 global_step=121999 loss=0.0023674034 psnr=30.215599 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=124000 global_step=123999 loss=0.0021401457 psnr=32.254433 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=126000 global_step=125999 loss=0.0014228853 psnr=33.209831 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=128000 global_step=127999 loss=0.0011311325 psnr=34.394070 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=130000 global_step=129999 loss=0.0015902612 psnr=33.637997 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=132000 global_step=131999 loss=0.0018356689 psnr=32.884930 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=134000 global_step=133999 loss=0.0022537494 psnr=32.296555 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=136000 global_step=135999 loss=0.0013300036 psnr=33.404373 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=138000 global_step=137999 loss=0.0007218302 psnr=37.071823 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=140000 global_step=139999 loss=0.0015909271 psnr=32.763138 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=142000 global_step=141999 loss=0.0018537518 psnr=32.632885 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=144000 global_step=143999 loss=0.0018801027 psnr=33.337818 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=146000 global_step=145999 loss=0.0006989487 psnr=37.352219 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=148000 global_step=147999 loss=0.0027887854 psnr=30.135187 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=150000 global_step=149999 loss=0.0013477845 psnr=33.296680 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=152000 global_step=151999 loss=0.0021505202 psnr=32.114273 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=154000 global_step=153999 loss=0.0024352837 psnr=31.397896 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=156000 global_step=155999 loss=0.0010308644 psnr=35.698299 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=158000 global_step=157999 loss=0.0024594180 psnr=29.696459 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=160000 global_step=159999 loss=0.0023515057 psnr=31.788586 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=162000 global_step=161999 loss=0.0026586782 psnr=31.244398 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=164000 global_step=163999 loss=0.0006938742 psnr=37.585403 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=166000 global_step=165999 loss=0.0015344208 psnr=34.271683 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=168000 global_step=167999 loss=0.0009710909 psnr=36.284252 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=170000 global_step=169999 loss=0.0027086041 psnr=30.418552 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=172000 global_step=171999 loss=0.0008471566 psnr=36.631706 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=174000 global_step=173999 loss=0.0011962883 psnr=34.956081 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=176000 global_step=175999 loss=0.0029588183 psnr=29.305199 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=178000 global_step=177999 loss=0.0026251329 psnr=29.304636 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=180000 global_step=179999 loss=0.0007509926 psnr=36.677853 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=182000 global_step=181999 loss=0.0019403110 psnr=33.136307 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=184000 global_step=183999 loss=0.0008463939 psnr=36.796692 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=186000 global_step=185999 loss=0.0017509223 psnr=33.996311 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=188000 global_step=187999 loss=0.0024182468 psnr=30.235653 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=190000 global_step=189999 loss=0.0006973266 psnr=37.607544 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=192000 global_step=191999 loss=0.0007576917 psnr=37.937183 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=194000 global_step=193999 loss=0.0014774125 psnr=33.605267 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=196000 global_step=195999 loss=0.0021702459 psnr=32.952171 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=198000 global_step=197999 loss=0.0008976170 psnr=35.139862 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=200000 global_step=199999 loss=0.0011416988 psnr=34.810188 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True
+iter=200000 global_step=200000 loss=0.0011416988 psnr=34.810188 muon_lr=5.00000000e-05 adam_lr=5.00000000e-05 muon_rank=256 muon_target_rank=256 muon_method=muon_full_rank_ns rank_role=full_rank_muon rank_saturated=True

@@ -1,0 +1,2 @@
+method,scene,variant,num_images,mean_mse,mean_psnr,mean_ssim,mean_lpips,checkpoint,checkpoint_file_step,checkpoint_global_step,config,render_dir,metric_source
+,,,3,0.002400041790679097,26.242626756119293,0.8199621637662252,,/data2/greenx9/temp_nerf/logs/mofa/fern_100k_mflr3e-3/100000.tar,100000,99999,/data2/greenx9/temp_nerf/logs/mofa/fern_100k_mflr3e-3/config.txt,,float32_render_output_before_png_quantization

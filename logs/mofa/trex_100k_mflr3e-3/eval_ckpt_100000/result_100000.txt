@@ -1,0 +1,10 @@
+status: OK
+checkpoint: /data2/greenx9/temp_nerf/logs/mofa/trex_100k_mflr3e-3/100000.tar
+checkpoint_file_step: 100000
+checkpoint_global_step: 99999
+num_images: 7
+mean_mse: 0.0021753253
+mean_psnr: 26.709351
+mean_ssim: 0.888385
+metrics_json: /data2/greenx9/temp_nerf/logs/mofa/trex_100k_mflr3e-3/eval_ckpt_100000/metrics_100000.json
+per_image_csv: /data2/greenx9/temp_nerf/logs/mofa/trex_100k_mflr3e-3/eval_ckpt_100000/per_image_metrics_100000.csv
